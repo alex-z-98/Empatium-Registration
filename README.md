@@ -1,5 +1,7 @@
 # Empatium-Registration
  
-To start the server use:\n
-npm install\n
+To start the server use:
+
+npm install
+
 node app.js
