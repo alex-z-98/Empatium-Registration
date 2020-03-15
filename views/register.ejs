@@ -1,0 +1,160 @@
+<div class="row mt-5">
+  <div class="col-md-6 m-auto">
+    <div class="card card-body">
+      <h1 class="text-center mb-3">
+        <i class="fas fa-user-plus"></i> Регистрация для клиента
+      </h1>
+      <% include ./partials/messages %>
+      <form action="/users/register" method="POST">
+        <!--
+        <div class="form-group">
+          <label for="data">Data</label>
+          <input
+            type="text"
+            id="data"
+            name="data"
+            class="form-control"
+            placeholder="Enter Date"
+            value="<%= typeof name != 'undefined' ? name : '' %>"
+          />
+        </div>
+        <div class="form-group">
+          <label for="telephone number">telephone number</label>
+          <input
+            type="text"
+            id="telephone"
+            name="telephone"
+            class="form-control"
+            placeholder="Enter Telephone number"
+            value="<%= typeof name != 'undefined' ? name : '' %>"
+          />
+        </div>
+        <div class="form-group">
+          </p><label for="Male/Female">Male/Female</label>
+          <input
+            type="text"
+            id="sex"
+            name="name"
+            class="form-control"
+            placeholder="Enter "
+            value="Male/Female"
+          />
+        </div>
+        <div class="form-group">
+          <label for="Region">Region</label>
+          <input
+            type="name"
+            id="region"
+            name="region"
+            class="form-control"
+            placeholder="Enter Region"
+            value="<%= typeof name != 'undefined' ? name : '' %>"
+          />
+        </div>
+        <div class="form-group">
+          <label for="Age">Age</label>
+          <input
+            type="name"
+            id="age"
+            name="name"
+            class="form-control"
+            placeholder="Enter Age"
+            value="<%= typeof name != 'undefined' ? name : '' %>"
+          />
+        </div>
+        <div class="form-group">
+          <label for="Cost">Cost</label>
+          <input
+            type="name"
+            id="cost"
+            name="cost"
+            class="form-control"
+            placeholder="Enter Cost"
+            value="<%= typeof name != 'undefined' ? name : '' %>"
+          />
+        </div>
+        <div class="form-group">
+          <label for="time session">time session</label>
+          <input
+            type="name"
+            id="timeossession"
+            name="timeossession"
+            class="form-control"
+            placeholder="Enter session"
+            value="<%= typeof name != 'undefined' ? name : '' %>"
+          />
+        </div>
+        <div class="form-group">
+          <label for="primaryproblem">primaryproblem</label>
+          <input
+            type="name"
+            id="primaryproblem"
+            name="primaryproblem"
+            class="form-control"
+            placeholder="Enter primaryproblem"
+            value="<%= typeof name != 'undefined' ? name : '' %>"
+          />
+        </div>
+        <div class="form-group">
+          <label for="psychgender">psychgender</label>
+          <input
+            type="name"
+            id="psychgender"
+            name="psychgender"
+            class="form-control"
+            placeholder="Enter psychgender"
+            value="<%= typeof name != 'undefined' ? name : '' %>"
+          />
+        </div>-->
+        <div class="form-group">
+          <label for="name">name</label>
+          <input
+            type="name"
+            id="name"
+            name="name"
+            class="form-control"
+            placeholder="Enter psychage"
+            value="<%= typeof name != 'undefined' ? name : '' %>"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            placeholder="Enter Email"
+            value="<%= typeof email != 'undefined' ? email : '' %>"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="form-control"
+            placeholder="Create Password"
+            value="<%= typeof password != 'undefined' ? password : '' %>"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password2">Confirm Password</label>
+          <input
+            type="password"
+            id="password2"
+            name="password2"
+            class="form-control"
+            placeholder="Confirm Password"
+            value="<%= typeof password2 != 'undefined' ? password2 : '' %>"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">
+          Register
+        </button>
+      </form>
+      <p class="lead mt-4">Have An Account? <a href="/users/login">Login</a></p>
+    </div>
+  </div>
+</div>
